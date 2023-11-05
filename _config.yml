@@ -1,7 +1,7 @@
 # Site settings
 title: "Michael W. Merriam's Academic Resume"
 description: "See Title"
-theme: resume
+theme: minima
 
 # Build settings
 markdown: kramdown
