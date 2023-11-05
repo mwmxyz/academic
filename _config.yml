@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Michael W. Merriam"
-resume_title:                   "Text & Technology PhD Student"
+resume_title:                   "UCF Text & Technology PhD Student"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "michael.merriam@ucf.edu"
@@ -23,7 +23,7 @@ resume_contact_address:         "12538 El Viento Rd, Clermont, FL"
 resume_header_contact_info:     "917-455-1420 • michael.merriam@ucf.edu"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>I specialize in curriculum innovation through game dynamics. With a core skill set that includes instructional design, educational technology integration, and game theory, I create immersive learning experiences.</p>"
+resume_header_intro: "<p>I specialize in curriculum innovation through game dynamics. With a core skill set that includes instructional design, educational technology integration, and game theory, I create immersive learning experiences. You can navigate to [a blog I periodically update](https://www.partlywicked.com) to read some of my criticism of escape rooms.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
