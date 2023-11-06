@@ -1,13 +1,18 @@
 # links
 - url: "https://www.linkedin.com/in/michael-merriam1/"
   description: My LinkedIn
+  
 - url: "https://vimeo.com/881499662"
   description: Presentation on Skill Assessments in Gamified Curricula (Games Based Learning Virtual Conference 2022, via Vimeo)
-# - url: "https://mwmxyz.github.io/academic/_assets/Merriam_Haitian_is_My_Literature.pdf"
-#   description: Haitian Literature as a Model for World Literature (2014, via PDF)
+  
+- url: "https://mwmxyz.github.io/academic/_assets/Merriam_Haitian_is_My_Literature.pdf"
+  description: Haitian Literature as a Model for World Literature (2014, via PDF)
+  
 - url: "https://www.worldliteraturetoday.org/blog/interviews/unvarnished-tales-brothers-grimm-conversation-jack-zipes"
   description: My interview with fairy tale expert Jack Zipes, at World Literature Today (2015)
+  
 - url: "https://lareviewofbooks.org/article/adult-fairy-tales/"
   description: Adult Fairy Tales, interview with author Michael Cunningham, at the LA Review of Books (2015)
-  # - url: "https://www.partlywicked.com"
-#  description: Partly Wicked (an escape room blog I write for)
+  
+- url: "https://www.partlywicked.com"
+  description: Partly Wicked (an escape room blog I write for)
