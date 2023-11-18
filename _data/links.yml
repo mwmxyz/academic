@@ -1,6 +1,6 @@
 # links
-- url: "https://www.linkedin.com/in/michael-merriam1/"
-  description: My LinkedIn
+# - url: "https://www.linkedin.com/in/michael-merriam1/"
+#   description: My LinkedIn
   
 # - url: "https://vimeo.com/881499662"
 #   description: Presentation on Skill Assessments in Gamified Curricula (Games Based Learning Virtual Conference 2022, via Vimeo)
@@ -8,11 +8,14 @@
 # - url: "https://specialagentmerriam.com/files/Merriam_Haitian_is_My_Language.pdf"
 #   description: Haitian Literature as a Model for the publication World Literature Today (2014, via PDF)
 
-- url: "https://vimeo.com/manage/videos/68965793"
-  description: King John (short film) for a screening at the Shakespeare Birthplace 2013
-
 - url: "https://https://thedrunkenodyssey.com/2023/08/06/587-a-discussion-of-myhouse-wad-for-doom-with-michael-merriam/"
   description: Guest spot on the literary podcast Drunken Odyssey, discussing the video game Doom and its mod entitled 'Myhouse.wad' as works of literature
 
 - url: "https://thedrunkenodyssey.com/2020/05/30/episode-422-michael-merriam/"
-  description: Guest on the literary podcast Drunen Odyssey, discussing the film and graphic novel 'Scott Pilgrim vs. The World'
+  description: As above, discussing the film and graphic novel 'Scott Pilgrim vs. The World'
+  
+- url: "https://specialagentmerriam.com/dispatches/peer-gynt"
+  description: Peer Gynt (for which I was the script writer) as broadcast on national radio in 2018
+  
+- url: "https://vimeo.com/manage/videos/68965793"
+  description: King John (short film) screened at the Shakespeare Birthplace 2013
