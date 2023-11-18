@@ -15,8 +15,8 @@
   # url: "https://www.buffalo.edu/nemla/convention.html"
   description: NeMLA (Northeast Modern Language Association) seminar developing the concept of 'ludoception' to describe a cognitive faculty honed by games, linking thematic elements with game mechanics to enhance understanding of real-world systems and social rules.
 
-  # Game Balance and Classroom Fairness
-  - project: Game Balance and Classroom Fairness
-    role: Author / Designer
-    duration: October 2023
-    description: SIGDOC (Special Interest Group on Design of Communication) interactive poster session diagramming the potential of game balance (in the field of design) to provide new conceptual models of 'fairness' in the classroom
+# Game Balance and Classroom Fairness
+- project: Game Balance and Classroom Fairness
+  role: Author / Designer
+  duration: October 2023
+  description: SIGDOC (Special Interest Group on Design of Communication) interactive poster session diagramming the potential of game balance (in the field of design) to provide new conceptual models of 'fairness' in the classroom
