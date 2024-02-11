@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Michael W. Merriam"
-resume_title:                   "UCF Text & Technology PhD Student"
+resume_title:                   "UCF, Texts & Technology"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "michael.merriam@ucf.edu"
