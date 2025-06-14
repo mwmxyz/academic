@@ -18,7 +18,7 @@ resume_contact_email:           "michael.merriam@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "917-455-1420"
-resume_contact_address:         "713 Groveland, FL"
+resume_contact_address:         "713 Black Eagle Drive, Groveland, FL, 34711"
 
 resume_header_contact_info:     "917-455-1420 • michael.merriam@gmail.com"
 display_header_contact_info:    "true"
