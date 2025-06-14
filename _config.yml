@@ -14,13 +14,13 @@ resume_name:                    "Michael W. Merriam"
 resume_title:                   "Independent"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "michael.merriam@gmail.com"
+resume_contact_email:           "michael (at) ludoception.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "917-455-1420"
 resume_contact_address:         "713 Black Eagle Drive, Groveland, FL, 34711"
 
-resume_header_contact_info:     "917-455-1420 • michael.merriam@gmail.com"
+resume_header_contact_info:     "917-455-1420 • michael (at) ludoception.com"
 display_header_contact_info:    "true"
 
 resume_header_intro: "<p>My research and professional interests involve the overlap of Game Writing and Game Design, specifically the ways that Creative Writing can re-define the boundaries of what counts as Game Design. This has lately involved the concept of Game Balance, which is an area less often touched on in studies of game narratives, but which could provide narrative writers a way to address directly more quantitative and computational elements of design. (Put more simply, at what point does Game Writing become indistinguishable from Game Design?)<p>I specialize in curriculum innovation through game dynamics. With a core skill set that includes instructional design, educational technology integration, and game theory, I create immersive learning experiences.</p>"
@@ -50,7 +50,7 @@ resume_social_links:
   # resume_facebook_url:          "insert Facebook URL here"
   resume_linkedin_url:          "https://www.linkedin.com/in/michael-merriam1/"
   # resume_instagram_url:         "insert your Instagram URL here"
-  # resume_website_url:           "http://joelglovier.com"
+  resume_website_url:           "http://www.ludoception.com"
   # resume_medium_url:            "https://medium.com/@jglovier"
 resume_print_social_links:      true
 
