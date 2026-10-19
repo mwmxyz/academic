@@ -11,15 +11,12 @@
 
       <header class="page-header">
 
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
         <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
 
-        <!-- Your name is defined in the _config.yml file -->
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
-        <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
         {% if site.display_header_contact_info == 'true' %}
         <div class="header-contact-info">
           <p>{{ site.resume_header_contact_info }}</p>
@@ -27,19 +24,13 @@
         {% endif %}
 
         <div class="title-bar no-print">
-
-          <!-- Your title is also defined in the _config.yml file -->
           <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
-
-          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
 
-      <div class="executive-summary" itemprop="description">
+        <div class="executive-summary" itemprop="description">
           {{ site.resume_header_intro }}
-       <!-- I recently gave a presentation <a href="https://vimeo.com/881499662"> on skill assessments in gamified curricula called Branch vs. Root</a>. Aside from the blog <a href="https://www.partlywicked.com ">Partly Wicked</a>, where I write about escape rooms, my last published articles appeared around 2015, in World Literature Today, <a href="https://specialagentmerriam.com/files/Merriam_Haitian_is_My_Language.pdf"> Haitian is My Language</a>, an interview with the author Franetienné, and an article on Haitial literature. An interview with <a href="https://www.worldliteraturetoday.org/blog/interviews/unvarnished-tales-brothers-grimm-conversation-jack-zipes">folklorist and fairy tale expert Jack Zipes that year</a>, and in the LA Review of Books, I interviewed <a href="https://lareviewofbooks.org/article/adult-fairy-tales/">author Michael Cunningham in connection with his novel The Snow Queen</a>. For n+1 (and the Faber and Faber anthology City x City) I wrote <a href="https://www.nplusonemag.com/online-only/online-only/brothel-washington/">This is Not a Brothel,</a> about an escort service in Washington, DC. -->
-        <!-- My main area of research and experimentation is in the overlap of education and game design, and my biggest project is an experimental model for online learning which resembles a LARP with a tiered set of options representing levels of participation, so that it is possible for a student to have a fully fictional character-avatar, or to participate as themselves, without an imaginary 'character' to serve as a shell. -->
-        </div> 
+        </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
         <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
@@ -50,193 +41,254 @@
 
       </header>
 
-      {% if site.resume_section_experience %}
+      <!-- Content is written directly into this file; the _data/*.yml files are no longer used. -->
+
       <!-- begin Experience -->
       <section class="content-section">
-
         <header class="section-header">
           <h2>Experience</h2>
         </header>
 
-        {% for job in site.data.experience %}
+        <!-- Uncomment once started:
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
+          <h3 class="resume-item-title" itemprop="name">DigiPen Institute of Technology</h3>
+          <h4 class="resume-item-details" itemprop="description">Course Author, CS 5110 System Design Methods (Online MS in Game Development) &bull; 2026 – present</h4>
+          <p class="resume-item-copy">Authoring the systems design methods course for the online MSGD, built in Unreal Engine 5 in collaboration with the program’s instructional design team.</p>
+        </div>
+        -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Applied Game Designs (AGD)</h3>
+          <h4 class="resume-item-details" itemprop="description">Head of Game Design &bull; 2026</h4>
+          <p class="resume-item-copy">Led game design across the studio’s projects, including Paragon, a deterministic tactical combat game.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Marauder Tech</h3>
+          <h4 class="resume-item-details" itemprop="description">Quest Designer, then Narrative Designer and Narrative Director, Price of Glory &bull; 2024 – 2025</h4>
+          <p class="resume-item-copy">Narrative, quest, and level design on a live-service multiplayer mobile game; the game remains live.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Full Sail University</h3>
+          <h4 class="resume-item-details" itemprop="description">Course Director, Writing for Games (Creative Writing MFA, online) &bull; 2018 – 2024</h4>
+          <p class="resume-item-copy">Created and ran the Writing for Games course; taught game writing across courses emphasizing the technical side and courses emphasizing the design and writing side.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">University of Central Florida, Nicholson School</h3>
+          <h4 class="resume-item-details" itemprop="description">Instructor, Game Design &bull; 2023 – 2024</h4>
+          <p class="resume-item-copy">Taught game design in the games and interactive media program; developed course materials for The Computer as Medium, Front End Web Development, and the senior capstone and portfolio course.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Partly Wicked</h3>
+          <h4 class="resume-item-details" itemprop="description">Escape Room Designer and Consultant &bull; 2015 – present</h4>
+          <p class="resume-item-copy">Design and consulting for escape rooms, including work for Escapology, then the largest escape room company in the United States.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Comets &amp; Cockpits</h3>
+          <h4 class="resume-item-details" itemprop="description">Guest Writer &bull; 2022</h4>
+          <p class="resume-item-copy">Original creature design with unique behavior, backstory, and lore.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Looking Glass Magazine</h3>
+          <h4 class="resume-item-details" itemprop="description">Editor in Chief &bull; 2008 – 2011</h4>
+          <p class="resume-item-copy">Led an eighteen-person team; designed CYOA games and puzzles for print; built one of the first magazines made for the iPhone, profiled in The New Yorker’s Talk of the Town (September 2008).</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Time Out Istanbul</h3>
+          <h4 class="resume-item-details" itemprop="description">Editor in Chief &bull; 2007 – 2008</h4>
+        </div>
       </section>
       <!-- end Experience -->
-      {% endif %}
 
-
-      {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
           <h2>Education</h2>
         </header>
-
-        {% for education in site.data.education %}
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-          <p class="resume-item-copy" itemprop="description">
-            <ul class="resume-item-list">
-              {% for award in education.awards %}
-              <li>{{ award.award }}</li>
-              {% endfor %}
-            </ul>
-
-
-          <p class="resume-item-copy">{{ education.summary }}</p>
+          <h3 class="resume-item-title" itemprop="name">Columbia University</h3>
+          <h4 class="resume-item-details group" itemprop="description">MA, Medieval and Renaissance Studies</h4>
+          <p class="resume-item-copy">Thesis on educational role-playing games in the early medieval period; coursework in the anthropology of play and the archaeology of toys.</p>
         </div>
-        {% endfor %}
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Columbia University</h3>
+          <h4 class="resume-item-details group" itemprop="description">BA, Archaeology and English/Comparative Literature</h4>
+          <h5 class="resume-item-details award-title">Summa cum laude</h5>
+        </div>
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">University of Central Florida</h3>
+          <h4 class="resume-item-details group" itemprop="description">Doctoral coursework, Texts &amp; Technology PhD program &bull; 2023 – 2025</h4>
+          <h5 class="resume-item-details award-title">Teaching Fellowship</h5>
+          <p class="resume-item-copy">Doctoral-level coursework including the program’s AI training sequence (2024).</p>
+        </div>
       </section>
       <!-- end Education -->
-      {% endif %}
 
+      <!-- begin Publications & Talks -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Publications &amp; Talks</h2>
+        </header>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Recording the Cut: Single-Context Recording for IDN Traversal Preservation</h3>
+          <h4 class="resume-item-details" itemprop="description">Peer-reviewed short paper, ICIDS 2026</h4>
+          <p class="resume-item-copy">Adapts archaeological single-context recording and the Harris matrix to separate observational record from interpretation in documenting interactive digital narrative traversals.</p>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Course Correction: Questions as Nodes in Quizzes and Interactive Non-Fiction</h3>
+          <h4 class="resume-item-details" itemprop="description">Proceedings paper and talk, Electronic Literature Organization (ELO) 2026</h4>
+          <p class="resume-item-copy">Ludoception applied to instructional systems; the quiz as a directed graph, with a working artifact.</p>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Ludoception: Perceiving the Designed Game in Literary and Digital Texts</h3>
+          <h4 class="resume-item-details" itemprop="description">Panel, Modern Language Association (MLA) 2027</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Stacking the Deck: Diegetic Games and Ludoceptive Agency in YA and Children’s Literature</h3>
+          <h4 class="resume-item-details" itemprop="description">Session, NeMLA 2027</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Taxonomic Theater</h3>
+          <h4 class="resume-item-details" itemprop="description">Book chapter, Bloomsbury (forthcoming)</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Chapter on grief and games, with Marc Ouellette</h3>
+          <h4 class="resume-item-details" itemprop="description">Book chapter, McFarland (forthcoming)</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Ludochronism: Procedural Verisimilitude in Gameworld Cartography</h3>
+          <h4 class="resume-item-details" itemprop="description">Essay for Imago Mundi, special issue on Maps and the Imagination</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">The Question Is a Node</h3>
+          <h4 class="resume-item-details" itemprop="description">Invited presentation, TALOS Lab, Crete, May 2026; also presented at the SA4AW conference</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">The attribute as game element</h3>
+          <h4 class="resume-item-details" itemprop="description">Co-presentation with William Walker, Serious Play Conference, Duke University, August 2026</h4>
+          <p class="resume-item-copy">Attribution flattened into quantified cause; applications from K-12 through university.</p>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Metattendance</h3>
+          <h4 class="resume-item-details" itemprop="description">Talk, CFA Games Conference, University of Kentucky, January 2024</h4>
+          <p class="resume-item-copy">Teaching in a post-attendance world.</p>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Game Balance and Classroom Fairness</h3>
+          <h4 class="resume-item-details" itemprop="description">Paper, ACM SIGDOC</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://vimeo.com/881499662" itemprop="url">Branch vs. Root</a></h3>
+          <h4 class="resume-item-details" itemprop="description">Talk on skill assessment in gamified curricula</h4>
+        </div>
+      </section>
+      <!-- end Publications & Talks -->
 
-      {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Built Systems &amp; Projects</h2>
         </header>
-
-        {% for project in site.data.projects %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.ludoception.com" itemprop="url">Game Writing Studio (GWS)</a></h3>
+          <h4 class="resume-item-details" itemprop="description">Designer and developer &bull; ongoing</h4>
+          <p class="resume-item-copy">Single-file HTML teaching modules for narrative design, with a directed-graph quiz engine and the anamorphic grading system (skill badges; scores only climb).</p>
         </div>
-        {% endfor %}
-
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Writing for Games (textbook)</h3>
+          <h4 class="resume-item-details" itemprop="description">Author &bull; in final stages</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Hired Mourner</h3>
+          <h4 class="resume-item-details" itemprop="description">Designer and developer</h4>
+          <p class="resume-item-copy">Interactive fiction delivered as a simulated-iPhone pseudo-OS, set in an alternate America where hired mourning is ordinary work.</p>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h3 class="resume-item-title" itemprop="name">Aven Lysarre</h3>
+          <h4 class="resume-item-details" itemprop="description">Designer</h4>
+          <p class="resume-item-copy">Paper-prototyped board game: a world-map board and cards styled as dime-store paperback covers.</p>
+        </div>
       </section>
       <!-- end Projects -->
-      {% endif %}
 
-      {% if site.resume_section_skills %}
       <!-- begin Skills -->
       <section class="content-section">
-
         <header class="section-header">
           <h2>Skills</h2>
         </header>
-        {% for skill in site.data.skills %}
         <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
+          <h4 class="resume-item-details">Narrative and systems design</h4>
+          <p class="resume-item-copy">Quest design, branching dialogue, worldbuilding, level design, game balance; live-service and single-player; escape rooms and site-specific play.</p>
         </div>
-        {% endfor %}
-
+        <div class="resume-item">
+          <h4 class="resume-item-details">Engines and tools</h4>
+          <p class="resume-item-copy">Unity, Twine, single-file HTML/JS applications, C++ (MUD codebase), H5P, Canvas.</p>
+        </div>
+        <div class="resume-item">
+          <h4 class="resume-item-details">Teaching and curriculum</h4>
+          <p class="resume-item-copy">Course creation and direction at the university level since 2018; asynchronous and online delivery; accessibility practice (self-written captioning); ACCSC accreditation.</p>
+        </div>
+        <div class="resume-item">
+          <h4 class="resume-item-details">Research methods</h4>
+          <p class="resume-item-copy">Design research, close playing, archaeological recording methods adapted to interactive narrative; AI-assisted workflows (doctoral training, 2024).</p>
+        </div>
+        <div class="resume-item">
+          <h4 class="resume-item-details">Editorial</h4>
+          <p class="resume-item-copy">Magazine editing and production; criticism and interviews for n+1, the Los Angeles Review of Books, World Literature Today, and the Financial Times.</p>
+        </div>
       </section>
       <!-- end Skills -->
-      {% endif %}
 
-      {% if site.resume_section_recognition %}
-      <!-- begin Recognition -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        {% for recognition in site.data.recognitions %}
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-          <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-          <p class="resume-item-copy">{{ recognition.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Recognition -->
-      {% endif %}
-
-      {% if site.resume_section_associations %}
       <!-- begin Associations -->
       <section class="content-section">
-
         <header class="section-header">
           <h2>Associations</h2>
         </header>
-
-        {% for association in site.data.associations %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
-          <p class="resume-item-copy">{{ association.summary }}</p>
+          <h3 class="resume-item-title" itemprop="name">ICIDS (International Conference on Interactive Digital Storytelling)</h3>
+          <h4 class="resume-item-details" itemprop="description">Program Committee, Theory/History/Foundations track &bull; 2026</h4>
         </div>
-        {% endfor %}
-
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">TALOS Lab, Crete</h3>
+          <h4 class="resume-item-details" itemprop="description">Listed contributor &bull; 2026 – present</h4>
+        </div>
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Electronic Literature Organization (ELO)</h3>
+          <h4 class="resume-item-details" itemprop="description">Presenter &bull; 2026</h4>
+        </div>
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Modern Language Association (MLA)</h3>
+          <h4 class="resume-item-details" itemprop="description">Panelist &bull; 2027</h4>
+        </div>
       </section>
       <!-- end Associations -->
-      {% endif %}
 
-      {% if site.resume_section_interests %}
-      <!-- begin Interests -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Outside Interests</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Interests -->
-      {% endif %}
-
-      {% if site.resume_section_links %}
       <!-- begin Links -->
       <section class="content-section">
-
         <header class="section-header">
-          <h2>Additional Links</h2>
+          <h2>Selected Writing &amp; Links</h2>
         </header>
-
         <div class="resume-item">
           <ul class="resume-item-list">
-            {% for link in site.data.links %}
-            <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
-            {% endfor %}
+            <li><a href="https://www.ludoception.com" itemprop="url">ludoception.com</a></li>
+            <li><a href="https://www.partlywicked.com" itemprop="url">Partly Wicked (escape room writing)</a></li>
+            <li><a href="https://www.nplusonemag.com/online-only/online-only/brothel-washington/" itemprop="url">“This Is Not a Brothel” (n+1)</a></li>
+            <li><a href="https://lareviewofbooks.org/article/adult-fairy-tales/" itemprop="url">Interview with Michael Cunningham on The Snow Queen (Los Angeles Review of Books)</a></li>
+            <li><a href="https://www.worldliteraturetoday.org/blog/interviews/unvarnished-tales-brothers-grimm-conversation-jack-zipes" itemprop="url">Interview with Jack Zipes (World Literature Today)</a></li>
+            <li><a href="https://specialagentmerriam.com/files/Merriam_Haitian_is_My_Language.pdf" itemprop="url">“Haitian Is My Language” (World Literature Today)</a></li>
           </ul>
         </div>
-
       </section>
       <!-- end Links -->
-      {% endif %}
 
       {% if site.resume_print_social_links %}
-      <!-- begin Print Social Links -->
       <section class="content-section print-only">
-
         <header class="section-header">
           <h2>Social Links</h2>
         </header>
-
         <div class="resume-item">
         {% include print-social-links.html %}
         </div>
-
       </section>
-      <!-- end Print Social Links -->
       {% endif %}
-
-  <!--    <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
-      </footer> -->
 
     </div>
 
