@@ -1,297 +1,194 @@
-<!DOCTYPE html>
-<html>
+]{% include head.html %}
+{% if site.resume_avatar == 'true' %} my photo {% endif %}
+{{ site.resume_name }}
+{% if site.display_header_contact_info == 'true' %}
 
-  {% include head.html %}
+{{ site.resume_header_contact_info }}
+{% endif %}
+{{ site.resume_title }}
+{% include icon-links.html %}
+{{ site.resume_header_intro }}
+{% if site.resume_looking_for_work == 'yes' %} Contact me {% elsif site.resume_looking_for_work == 'no' %} I'm not looking for work right now. {% else %} {% endif %}
+Experience
+DigiPen Institute of Technology
+Course Author, CS 5110 System Design Methods (Online MS in Game Development) • 2026 – present
 
-  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+Authoring the systems design methods course for the online MSGD, built in Unreal Engine 5 in collaboration with the program’s instructional design team.
+Applied Game Designs (AGD)
+Head of Game Design • 2026
 
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
-      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
+Led game design across the studio’s projects, including Paragon, a deterministic tactical combat game.
+Marauder Tech
+Quest Designer, Narrative Designer/Director • May 2024 – Dec 2025
 
-      <header class="page-header">
+Narrative design, lorekeeping, quest and mission design, level design, character design and related duties on Price of Glory, a live-service multiplayer mobile strategy game; the game remains live. Ref. contact: Shawn Borsky (Senior Product Manager), shawn (at) borsky.co
+University of Central Florida
+Instructor • 2023 – 2024
 
-        {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
-        {% endif %}
+Created material, designed and/or updated modules, and taught courses Introduction to Digital Media and Game Design Portfolio Development.
+Comets & Cockpits
+Guest Writer • 2022
 
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+Created material for a TTRPG module, centered around an original creature with unique behavior, backstory, and lore.
+Full Sail University
+Course Director (Writing for Games, Script Analysis and Criticism, et al.) • Dec 2018 – Jun 2022
 
-        {% if site.display_header_contact_info == 'true' %}
-        <div class="header-contact-info">
-          <p>{{ site.resume_header_contact_info }}</p>
-        </div>
-        {% endif %}
+Designed and delivered course materials for undergraduate and graduate students that aligned with curriculum requirements. Leveraged multimedia tools to simulate collaborative writers’ room experiences in online environments, enhancing student engagement. Re-focused all creative writing assignments and assessments toward industry skills acquisition. Prepared curriculum maps, and organized trainings on the preparation of curriculum maps for all faculty of the Creative Writing MFA program. Gained extensive knowledge of ACCSC accreditation standards through direct involvement in the accreditation process.
 
-        <div class="title-bar no-print">
-          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
-          {% include icon-links.html %}
-        </div>
+    Created a modular, synchronous online Writing for Games course that taught game design skills through collaborative writing (for the Creative Writing MFA program)
+    Re-designed and taught the MFA Creative Writing course in Script Analysis & Criticism
+    Taught MFA courses in Visual Storytelling and Character Creation & Development
+    Taught BFA courses in Science Fiction and Children’s Entertainment
 
-        <div class="executive-summary" itemprop="description">
-          {{ site.resume_header_intro }}
-        </div>
+Radio Theater Project
+Writer • 2018
 
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
+Adapted works of literature into radio scripts for national syndication, including Timon of Athens and The Diary of Lady Murasaki.
+Partly Wicked
+Escape Room Designer and Consultant • 2015 – present
 
-      </header>
+Design and consulting for escape rooms, including work for Escapology, then the largest escape room company in the United States.
+Looking Glass Magazine
+Editor in Chief • 2008 – 2011
 
-      <!-- Content is written directly into this file; the _data/*.yml files are no longer used. -->
+Led an eighteen-person team; designed CYOA games and puzzles for print; built one of the first magazines made for the iPhone, profiled in The New Yorker’s Talk of the Town (September 2008).
+Time Out Istanbul
+Editor in Chief • 2007 – 2008
+Education
+University of Central Florida
+Doctoral coursework, Texts & Technology PhD program • 2023 – 2025
+Teaching Fellowship
 
-      <!-- begin Experience -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
+Doctoral-level coursework including the program’s AI training sequence (2024).
+Columbia University in the City of New York
+Master of Arts, Medieval/Renaissance Studies • 2015
 
-        <!-- Uncomment once started:
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">DigiPen Institute of Technology</h3>
-          <h4 class="resume-item-details" itemprop="description">Course Author, CS 5110 System Design Methods (Online MS in Game Development) &bull; 2026 – present</h4>
-          <p class="resume-item-copy">Authoring the systems design methods course for the online MSGD, built in Unreal Engine 5 in collaboration with the program’s instructional design team.</p>
-        </div>
-        -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Applied Game Designs (AGD)</h3>
-          <h4 class="resume-item-details" itemprop="description">Head of Game Design &bull; 2026</h4>
-          <p class="resume-item-copy">Led game design across the studio’s projects, including Paragon, a deterministic tactical combat game.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Marauder Tech</h3>
-          <h4 class="resume-item-details" itemprop="description">Quest Designer, then Narrative Designer and Narrative Director, Price of Glory &bull; 2024 – 2025</h4>
-          <p class="resume-item-copy">Narrative, quest, and level design on a live-service multiplayer mobile game; the game remains live.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Full Sail University</h3>
-          <h4 class="resume-item-details" itemprop="description">Course Director, Writing for Games (Creative Writing MFA, online) &bull; 2018 – 2024</h4>
-          <p class="resume-item-copy">Created and ran the Writing for Games course; taught game writing across courses emphasizing the technical side and courses emphasizing the design and writing side.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">University of Central Florida, Nicholson School</h3>
-          <h4 class="resume-item-details" itemprop="description">Instructor, Game Design &bull; 2023 – 2024</h4>
-          <p class="resume-item-copy">Taught game design in the games and interactive media program; developed course materials for The Computer as Medium, Front End Web Development, and the senior capstone and portfolio course.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Partly Wicked</h3>
-          <h4 class="resume-item-details" itemprop="description">Escape Room Designer and Consultant &bull; 2015 – present</h4>
-          <p class="resume-item-copy">Design and consulting for escape rooms, including work for Escapology, then the largest escape room company in the United States.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Comets &amp; Cockpits</h3>
-          <h4 class="resume-item-details" itemprop="description">Guest Writer &bull; 2022</h4>
-          <p class="resume-item-copy">Original creature design with unique behavior, backstory, and lore.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Looking Glass Magazine</h3>
-          <h4 class="resume-item-details" itemprop="description">Editor in Chief &bull; 2008 – 2011</h4>
-          <p class="resume-item-copy">Led an eighteen-person team; designed CYOA games and puzzles for print; built one of the first magazines made for the iPhone, profiled in The New Yorker’s Talk of the Town (September 2008).</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Time Out Istanbul</h3>
-          <h4 class="resume-item-details" itemprop="description">Editor in Chief &bull; 2007 – 2008</h4>
-        </div>
-      </section>
-      <!-- end Experience -->
+Thesis on educational role-playing games in the early medieval period; coursework in the anthropology of play and the archaeology of toys.
+Columbia University in the City of New York
+Bachelor of Arts, Archaeology, English and Comparative Literature • 2010 – 2014
+Summa cum Laude
+Publications & Talks
+Recording the Cut: Single-Context Recording for IDN Traversal Preservation
+Peer-reviewed short paper, ICIDS 2026
 
-      <!-- begin Education -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Columbia University</h3>
-          <h4 class="resume-item-details group" itemprop="description">MA, Medieval and Renaissance Studies</h4>
-          <p class="resume-item-copy">Thesis on educational role-playing games in the early medieval period; coursework in the anthropology of play and the archaeology of toys.</p>
-        </div>
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Columbia University</h3>
-          <h4 class="resume-item-details group" itemprop="description">BA, Archaeology and English/Comparative Literature</h4>
-          <h5 class="resume-item-details award-title">Summa cum laude</h5>
-        </div>
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">University of Central Florida</h3>
-          <h4 class="resume-item-details group" itemprop="description">Doctoral coursework, Texts &amp; Technology PhD program &bull; 2023 – 2025</h4>
-          <h5 class="resume-item-details award-title">Teaching Fellowship</h5>
-          <p class="resume-item-copy">Doctoral-level coursework including the program’s AI training sequence (2024).</p>
-        </div>
-      </section>
-      <!-- end Education -->
+Adapts archaeological single-context recording and the Harris matrix to separate observational record from interpretation in documenting interactive digital narrative traversals.
+Course Correction: Questions as Nodes in Quizzes and Interactive Non-Fiction
+Proceedings paper and talk, Electronic Literature Organization (ELO) 2026
 
-      <!-- begin Publications & Talks -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Publications &amp; Talks</h2>
-        </header>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Recording the Cut: Single-Context Recording for IDN Traversal Preservation</h3>
-          <h4 class="resume-item-details" itemprop="description">Peer-reviewed short paper, ICIDS 2026</h4>
-          <p class="resume-item-copy">Adapts archaeological single-context recording and the Harris matrix to separate observational record from interpretation in documenting interactive digital narrative traversals.</p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Course Correction: Questions as Nodes in Quizzes and Interactive Non-Fiction</h3>
-          <h4 class="resume-item-details" itemprop="description">Proceedings paper and talk, Electronic Literature Organization (ELO) 2026</h4>
-          <p class="resume-item-copy">Ludoception applied to instructional systems; the quiz as a directed graph, with a working artifact.</p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Ludoception: Perceiving the Designed Game in Literary and Digital Texts</h3>
-          <h4 class="resume-item-details" itemprop="description">Panel, Modern Language Association (MLA) 2027</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Stacking the Deck: Diegetic Games and Ludoceptive Agency in YA and Children’s Literature</h3>
-          <h4 class="resume-item-details" itemprop="description">Session, NeMLA 2027</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Taxonomic Theater</h3>
-          <h4 class="resume-item-details" itemprop="description">Book chapter, Bloomsbury (forthcoming)</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Chapter on grief and games, with Marc Ouellette</h3>
-          <h4 class="resume-item-details" itemprop="description">Book chapter, McFarland (forthcoming)</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Ludochronism: Procedural Verisimilitude in Gameworld Cartography</h3>
-          <h4 class="resume-item-details" itemprop="description">Essay for Imago Mundi, special issue on Maps and the Imagination</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">The Question Is a Node</h3>
-          <h4 class="resume-item-details" itemprop="description">Invited presentation, TALOS Lab, Crete, May 2026; also presented at the SA4AW conference</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">The attribute as game element</h3>
-          <h4 class="resume-item-details" itemprop="description">Co-presentation with William Walker, Serious Play Conference, Duke University, August 2026</h4>
-          <p class="resume-item-copy">Attribution flattened into quantified cause; applications from K-12 through university.</p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Metattendance</h3>
-          <h4 class="resume-item-details" itemprop="description">Talk, CFA Games Conference, University of Kentucky, January 2024</h4>
-          <p class="resume-item-copy">Teaching in a post-attendance world.</p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Game Balance and Classroom Fairness</h3>
-          <h4 class="resume-item-details" itemprop="description">Paper, ACM SIGDOC</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name"><a href="https://vimeo.com/881499662" itemprop="url">Branch vs. Root</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Talk on skill assessment in gamified curricula</h4>
-        </div>
-      </section>
-      <!-- end Publications & Talks -->
+Ludoception applied to instructional systems; the quiz as a directed graph, with a working artifact.
+Ludoception: Perceiving the Designed Game in Literary and Digital Texts
+Panel, Modern Language Association (MLA) 2027
+Stacking the Deck: Diegetic Games and Ludoceptive Agency in YA and Children’s Literature
+Session, NeMLA 2027
+Taxonomic Theater
+Book chapter, Bloomsbury (forthcoming)
+Chapter on grief and games, with Marc Ouellette
+Book chapter, McFarland (forthcoming)
+Asynchronous Architectures of Ritual Time: Designing Synchronous Experience in Play and Pedagogy (working title)
+Book chapter (forthcoming)
+Ludochronism: Procedural Verisimilitude in Gameworld Cartography
+Essay for Imago Mundi, special issue on Maps and the Imagination
+The Question Is a Node
+Invited presentation, TALOS Lab, Crete, May 2026; also presented at the SA4AW conference
+The attribute as game element
+Co-presentation with William Walker, Serious Play Conference, Duke University, August 2026
 
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Built Systems &amp; Projects</h2>
-        </header>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name"><a href="https://www.ludoception.com" itemprop="url">Game Writing Studio (GWS)</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Designer and developer &bull; ongoing</h4>
-          <p class="resume-item-copy">Single-file HTML teaching modules for narrative design, with a directed-graph quiz engine and the anamorphic grading system (skill badges; scores only climb).</p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Writing for Games (textbook)</h3>
-          <h4 class="resume-item-details" itemprop="description">Author &bull; in final stages</h4>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Hired Mourner</h3>
-          <h4 class="resume-item-details" itemprop="description">Designer and developer</h4>
-          <p class="resume-item-copy">Interactive fiction delivered as a simulated-iPhone pseudo-OS, set in an alternate America where hired mourning is ordinary work.</p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <h3 class="resume-item-title" itemprop="name">Aven Lysarre</h3>
-          <h4 class="resume-item-details" itemprop="description">Designer</h4>
-          <p class="resume-item-copy">Paper-prototyped board game: a world-map board and cards styled as dime-store paperback covers.</p>
-        </div>
-      </section>
-      <!-- end Projects -->
+Attribution flattened into quantified cause; applications from K-12 through university.
+Game, Text, Match: Diegetic Games as Narrative Systems
+Chair and Organizer, NeMLA 2026, March 2026
 
-      <!-- begin Skills -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        <div class="resume-item">
-          <h4 class="resume-item-details">Narrative and systems design</h4>
-          <p class="resume-item-copy">Quest design, branching dialogue, worldbuilding, level design, game balance; live-service and single-player; escape rooms and site-specific play.</p>
-        </div>
-        <div class="resume-item">
-          <h4 class="resume-item-details">Engines and tools</h4>
-          <p class="resume-item-copy">Unity, Twine, single-file HTML/JS applications, C++ (MUD codebase), H5P, Canvas.</p>
-        </div>
-        <div class="resume-item">
-          <h4 class="resume-item-details">Teaching and curriculum</h4>
-          <p class="resume-item-copy">Course creation and direction at the university level since 2018; asynchronous and online delivery; accessibility practice (self-written captioning); ACCSC accreditation.</p>
-        </div>
-        <div class="resume-item">
-          <h4 class="resume-item-details">Research methods</h4>
-          <p class="resume-item-copy">Design research, close playing, archaeological recording methods adapted to interactive narrative; AI-assisted workflows (doctoral training, 2024).</p>
-        </div>
-        <div class="resume-item">
-          <h4 class="resume-item-details">Editorial</h4>
-          <p class="resume-item-copy">Magazine editing and production; criticism and interviews for n+1, the Los Angeles Review of Books, World Literature Today, and the Financial Times.</p>
-        </div>
-      </section>
-      <!-- end Skills -->
+Organized and chaired an interdisciplinary panel on diegetic games in literature, film, and media. The session invited papers that treated fictional games as meaningful systems in their own right, applying game studies and narrative theory to analyze rule-based structures embedded within stories.
+Shadow Math: On Shirley Jackson and The Lottery
+Poster and talk, ACH 2025, June 2025
 
-      <!-- begin Associations -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">ICIDS (International Conference on Interactive Digital Storytelling)</h3>
-          <h4 class="resume-item-details" itemprop="description">Program Committee, Theory/History/Foundations track &bull; 2026</h4>
-        </div>
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">TALOS Lab, Crete</h3>
-          <h4 class="resume-item-details" itemprop="description">Listed contributor &bull; 2026 – present</h4>
-        </div>
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Electronic Literature Organization (ELO)</h3>
-          <h4 class="resume-item-details" itemprop="description">Presenter &bull; 2026</h4>
-        </div>
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Modern Language Association (MLA)</h3>
-          <h4 class="resume-item-details" itemprop="description">Panelist &bull; 2027</h4>
-        </div>
-      </section>
-      <!-- end Associations -->
+Analyzes The Lottery as a story containing a hidden computational system, and proposes a method of using game design as the disciplinary lens through which to perform close readings on diegetic games found within literature.
+Equity Quest
+Author and presenter, Virtual-Based Games in Education Conference, June 2024
 
-      <!-- begin Links -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Selected Writing &amp; Links</h2>
-        </header>
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            <li><a href="https://www.ludoception.com" itemprop="url">ludoception.com</a></li>
-            <li><a href="https://www.partlywicked.com" itemprop="url">Partly Wicked (escape room writing)</a></li>
-            <li><a href="https://www.nplusonemag.com/online-only/online-only/brothel-washington/" itemprop="url">“This Is Not a Brothel” (n+1)</a></li>
-            <li><a href="https://lareviewofbooks.org/article/adult-fairy-tales/" itemprop="url">Interview with Michael Cunningham on The Snow Queen (Los Angeles Review of Books)</a></li>
-            <li><a href="https://www.worldliteraturetoday.org/blog/interviews/unvarnished-tales-brothers-grimm-conversation-jack-zipes" itemprop="url">Interview with Jack Zipes (World Literature Today)</a></li>
-            <li><a href="https://specialagentmerriam.com/files/Merriam_Haitian_is_My_Language.pdf" itemprop="url">“Haitian Is My Language” (World Literature Today)</a></li>
-          </ul>
-        </div>
-      </section>
-      <!-- end Links -->
+Synchronous online presentation about incorporating real-world inequalities into the design of gamified modules.
+Risk and Re-word: Board Game Themes as Encrypted Cognitive Tools
+Seminar paper, NeMLA, March 2024
 
-      {% if site.resume_print_social_links %}
-      <section class="content-section print-only">
-        <header class="section-header">
-          <h2>Social Links</h2>
-        </header>
-        <div class="resume-item">
-        {% include print-social-links.html %}
-        </div>
-      </section>
-      {% endif %}
+Develops the concept of ludoception to describe a cognitive faculty honed by games, linking thematic elements with game mechanics to enhance understanding of real-world systems and social rules.
+Checkmate or Chat-Bot? Leveraging AI to Gamify Classroom Learning
+Conference paper, NeMLA, March 2024
 
-    </div>
+Ludic curriculum design using AI to create egregoric NPCs of student groups, and incorporating narrative for enhanced student engagement.
+Metattendance: Social Deduction Games as Models for Asymmetrical Policies in a Post-Attendance World
+Paper, CFA Games Conference, University of Kentucky, January 2024
 
-  </body>
+Uses the asymmetrical rules for player roles in social deduction games as models for asymmetrical attendance policies, and for methods of including antagonistic students without needing to change their behavior or attitude.
+Game Balance and Classroom Fairness
+Interactive poster session, ACM SIGDOC, October 2023
 
-</html>
+Diagrams the potential of game balance (in the field of design) to provide new conceptual models of fairness in the classroom.
+Branch vs. Root
+Talk on skill assessment in gamified curricula, Games Based Learning Virtual Conference 2022
+Built Systems & Projects
+Game Writing Studio (GWS)
+Designer and developer • ongoing
+
+Single-file HTML teaching modules for narrative design, with a directed-graph quiz engine and the anamorphic grading system (skill badges; scores only climb).
+Undead Computer (undead.computer)
+Designer, Electronic Literature Organization exhibit • July – August 2024
+
+A game-like meta-exhibit focused on the exploration and interactive engagement with obsolete technologies. Participants interact with, modify, and repurpose the text of the website itself, while dead links and other phenomena speak to the decay of the once hopeful techno-space.
+Writing for Games (textbook)
+Author • in final stages
+Hired Mourner
+Designer and developer
+
+Interactive fiction delivered as a simulated-iPhone pseudo-OS, set in an alternate America where hired mourning is ordinary work.
+Aven Lysarre
+Designer
+
+Paper-prototyped board game: a world-map board and cards styled as dime-store paperback covers.
+Peer Gynt
+Script writer, radio production broadcast on national radio • 2018
+King John (short film)
+Art installation, screened at the Shakespeare Birthplace • 2013
+Skills
+Educational Technology Integration (Script Languages, et al.)
+
+Integrating educational technology to reshape the classroom experience; integrating Unity and various script languages into courses in Level Design to bridge knowledge gaps and diverse fields of student expertise; leveraging tools that resonate with a digital-native audience, while meeting or exceeding the needs of non-student stakeholders.
+Immersive Space Design
+
+Escape rooms, theatrical experiences, and experience working in film and television art departments.
+Game Writing
+
+Narrative Design and Narrative Direction, including methods for influencing technical departments through plain language documentation.
+Research Methods
+
+Design research, close playing, archaeological recording methods adapted to interactive narrative; AI-assisted workflows (doctoral training, 2024).
+Editorial
+
+Magazine editing and production; criticism and interviews for n+1, the Los Angeles Review of Books, World Literature Today, and the Financial Times.
+Recognition
+Profile in The New Yorker (Talk of the Town)
+The New Yorker • 2008
+
+Work as editor of “the first magazine for the iPhone” and with digital fashion photography, written up in a September issue of The New Yorker.
+Associations
+ICIDS (International Conference on Interactive Digital Storytelling)
+Program Committee, Theory/History/Foundations track • 2026
+TALOS Lab, Crete
+Listed contributor • 2026 – present
+Electronic Literature Organization (ELO)
+Presenter and exhibitor • 2024 – 2026
+Modern Language Association (MLA)
+Panelist • 2027
+Selected Writing & Links
+
+    ludoception.com
+    Partly Wicked, my escape room blog (written with Paul S. Nowak)
+    LA Review of Books: interview with Michael Cunningham, author of The Hours and The Snow Queen
+    World Literature Today: interview with fairy tale expert Jack Zipes
+    World Literature Today: Haitian literature as a model for world literature, and an interview with Haitian author Frankétienne
+    n+1: This Is Not a Brothel (also reprinted in Salon.com)
+    The Drunken Odyssey podcast: Doom and the mod Myhouse.wad as works of literature
+    The Drunken Odyssey podcast: the film and graphic novel Scott Pilgrim vs. The World
+
+{% if site.resume_print_social_links %}
+Social Links
+{% include print-social-links.html %}
+{% endif %}
