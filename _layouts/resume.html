@@ -1,194 +1,238 @@
-]{% include head.html %}
-{% if site.resume_avatar == 'true' %} my photo {% endif %}
-{{ site.resume_name }}
-{% if site.display_header_contact_info == 'true' %}
+<!DOCTYPE html>
+<html>
 
-{{ site.resume_header_contact_info }}
-{% endif %}
-{{ site.resume_title }}
-{% include icon-links.html %}
-{{ site.resume_header_intro }}
-{% if site.resume_looking_for_work == 'yes' %} Contact me {% elsif site.resume_looking_for_work == 'no' %} I'm not looking for work right now. {% else %} {% endif %}
-Experience
-DigiPen Institute of Technology
-Course Author, CS 5110 System Design Methods (Online MS in Game Development) • 2026 – present
+  {% include head.html %}
 
-Authoring the systems design methods course for the online MSGD, built in Unreal Engine 5 in collaboration with the program’s instructional design team.
-Applied Game Designs (AGD)
-Head of Game Design • 2026
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-Led game design across the studio’s projects, including Paragon, a deterministic tactical combat game.
-Marauder Tech
-Quest Designer, Narrative Designer/Director • May 2024 – Dec 2025
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
+      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
-Narrative design, lorekeeping, quest and mission design, level design, character design and related duties on Price of Glory, a live-service multiplayer mobile strategy game; the game remains live. Ref. contact: Shawn Borsky (Senior Product Manager), shawn (at) borsky.co
-University of Central Florida
-Instructor • 2023 – 2024
+      <header class="page-header">
 
-Created material, designed and/or updated modules, and taught courses Introduction to Digital Media and Game Design Portfolio Development.
-Comets & Cockpits
-Guest Writer • 2022
+        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        {% if site.resume_avatar == 'true' %}
+        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        {% endif %}
 
-Created material for a TTRPG module, centered around an original creature with unique behavior, backstory, and lore.
-Full Sail University
-Course Director (Writing for Games, Script Analysis and Criticism, et al.) • Dec 2018 – Jun 2022
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
-Designed and delivered course materials for undergraduate and graduate students that aligned with curriculum requirements. Leveraged multimedia tools to simulate collaborative writers’ room experiences in online environments, enhancing student engagement. Re-focused all creative writing assignments and assessments toward industry skills acquisition. Prepared curriculum maps, and organized trainings on the preparation of curriculum maps for all faculty of the Creative Writing MFA program. Gained extensive knowledge of ACCSC accreditation standards through direct involvement in the accreditation process.
+        <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
+        {% if site.display_header_contact_info == 'true' %}
+        <div class="header-contact-info">
+          <p>{{ site.resume_header_contact_info }}</p>
+        </div>
+        {% endif %}
 
-    Created a modular, synchronous online Writing for Games course that taught game design skills through collaborative writing (for the Creative Writing MFA program)
-    Re-designed and taught the MFA Creative Writing course in Script Analysis & Criticism
-    Taught MFA courses in Visual Storytelling and Character Creation & Development
-    Taught BFA courses in Science Fiction and Children’s Entertainment
+        <div class="title-bar no-print">
 
-Radio Theater Project
-Writer • 2018
+          <!-- Your title is also defined in the _config.yml file -->
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
 
-Adapted works of literature into radio scripts for national syndication, including Timon of Athens and The Diary of Lady Murasaki.
-Partly Wicked
-Escape Room Designer and Consultant • 2015 – present
+          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          {% include icon-links.html %}
+        </div>
 
-Design and consulting for escape rooms, including work for Escapology, then the largest escape room company in the United States.
-Looking Glass Magazine
-Editor in Chief • 2008 – 2011
+      <div class="executive-summary" itemprop="description">
+          {{ site.resume_header_intro }}
+        </div> 
 
-Led an eighteen-person team; designed CYOA games and puzzles for print; built one of the first magazines made for the iPhone, profiled in The New Yorker’s Talk of the Town (September 2008).
-Time Out Istanbul
-Editor in Chief • 2007 – 2008
-Education
-University of Central Florida
-Doctoral coursework, Texts & Technology PhD program • 2023 – 2025
-Teaching Fellowship
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
 
-Doctoral-level coursework including the program’s AI training sequence (2024).
-Columbia University in the City of New York
-Master of Arts, Medieval/Renaissance Studies • 2015
+      </header>
 
-Thesis on educational role-playing games in the early medieval period; coursework in the anthropology of play and the archaeology of toys.
-Columbia University in the City of New York
-Bachelor of Arts, Archaeology, English and Comparative Literature • 2010 – 2014
-Summa cum Laude
-Publications & Talks
-Recording the Cut: Single-Context Recording for IDN Traversal Preservation
-Peer-reviewed short paper, ICIDS 2026
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
 
-Adapts archaeological single-context recording and the Harris matrix to separate observational record from interpretation in documenting interactive digital narrative traversals.
-Course Correction: Questions as Nodes in Quizzes and Interactive Non-Fiction
-Proceedings paper and talk, Electronic Literature Organization (ELO) 2026
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
 
-Ludoception applied to instructional systems; the quiz as a directed graph, with a working artifact.
-Ludoception: Perceiving the Designed Game in Literary and Digital Texts
-Panel, Modern Language Association (MLA) 2027
-Stacking the Deck: Diegetic Games and Ludoceptive Agency in YA and Children’s Literature
-Session, NeMLA 2027
-Taxonomic Theater
-Book chapter, Bloomsbury (forthcoming)
-Chapter on grief and games, with Marc Ouellette
-Book chapter, McFarland (forthcoming)
-Asynchronous Architectures of Ritual Time: Designing Synchronous Experience in Play and Pedagogy (working title)
-Book chapter (forthcoming)
-Ludochronism: Procedural Verisimilitude in Gameworld Cartography
-Essay for Imago Mundi, special issue on Maps and the Imagination
-The Question Is a Node
-Invited presentation, TALOS Lab, Crete, May 2026; also presented at the SA4AW conference
-The attribute as game element
-Co-presentation with William Walker, Serious Play Conference, Duke University, August 2026
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+        </div><!-- end of resume-item -->
+        {% endfor %}
 
-Attribution flattened into quantified cause; applications from K-12 through university.
-Game, Text, Match: Diegetic Games as Narrative Systems
-Chair and Organizer, NeMLA 2026, March 2026
+      </section>
+      <!-- end Experience -->
+      {% endif %}
 
-Organized and chaired an interdisciplinary panel on diegetic games in literature, film, and media. The session invited papers that treated fictional games as meaningful systems in their own right, applying game studies and narrative theory to analyze rule-based structures embedded within stories.
-Shadow Math: On Shirley Jackson and The Lottery
-Poster and talk, ACH 2025, June 2025
 
-Analyzes The Lottery as a story containing a hidden computational system, and proposes a method of using game design as the disciplinary lens through which to perform close readings on diegetic games found within literature.
-Equity Quest
-Author and presenter, Virtual-Based Games in Education Conference, June 2024
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
 
-Synchronous online presentation about incorporating real-world inequalities into the design of gamified modules.
-Risk and Re-word: Board Game Themes as Encrypted Cognitive Tools
-Seminar paper, NeMLA, March 2024
+        {% for education in site.data.education %}
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+          <p class="resume-item-copy" itemprop="description">
+            <ul class="resume-item-list">
+              {% for award in education.awards %}
+              <li>{{ award.award }}</li>
+              {% endfor %}
+            </ul>
 
-Develops the concept of ludoception to describe a cognitive faculty honed by games, linking thematic elements with game mechanics to enhance understanding of real-world systems and social rules.
-Checkmate or Chat-Bot? Leveraging AI to Gamify Classroom Learning
-Conference paper, NeMLA, March 2024
 
-Ludic curriculum design using AI to create egregoric NPCs of student groups, and incorporating narrative for enhanced student engagement.
-Metattendance: Social Deduction Games as Models for Asymmetrical Policies in a Post-Attendance World
-Paper, CFA Games Conference, University of Kentucky, January 2024
+          <p class="resume-item-copy">{{ education.summary }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      <!-- end Education -->
+      {% endif %}
 
-Uses the asymmetrical rules for player roles in social deduction games as models for asymmetrical attendance policies, and for methods of including antagonistic students without needing to change their behavior or attitude.
-Game Balance and Classroom Fairness
-Interactive poster session, ACM SIGDOC, October 2023
 
-Diagrams the potential of game balance (in the field of design) to provide new conceptual models of fairness in the classroom.
-Branch vs. Root
-Talk on skill assessment in gamified curricula, Games Based Learning Virtual Conference 2022
-Built Systems & Projects
-Game Writing Studio (GWS)
-Designer and developer • ongoing
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
 
-Single-file HTML teaching modules for narrative design, with a directed-graph quiz engine and the anamorphic grading system (skill badges; scores only climb).
-Undead Computer (undead.computer)
-Designer, Electronic Literature Organization exhibit • July – August 2024
+        {% for project in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <p class="resume-item-copy">{{ project.description }}</p>
+        </div>
+        {% endfor %}
 
-A game-like meta-exhibit focused on the exploration and interactive engagement with obsolete technologies. Participants interact with, modify, and repurpose the text of the website itself, while dead links and other phenomena speak to the decay of the once hopeful techno-space.
-Writing for Games (textbook)
-Author • in final stages
-Hired Mourner
-Designer and developer
+      </section>
+      <!-- end Projects -->
+      {% endif %}
 
-Interactive fiction delivered as a simulated-iPhone pseudo-OS, set in an alternate America where hired mourning is ordinary work.
-Aven Lysarre
-Designer
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
 
-Paper-prototyped board game: a world-map board and cards styled as dime-store paperback covers.
-Peer Gynt
-Script writer, radio production broadcast on national radio • 2018
-King John (short film)
-Art installation, screened at the Shakespeare Birthplace • 2013
-Skills
-Educational Technology Integration (Script Languages, et al.)
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+        {% for skill in site.data.skills %}
+        <div class="resume-item">
+          <h4 class="resume-item-details">{{ skill.skill }}</h4>
+          <p class="resume-item-copy">{{ skill.description }}</p>
+        </div>
+        {% endfor %}
 
-Integrating educational technology to reshape the classroom experience; integrating Unity and various script languages into courses in Level Design to bridge knowledge gaps and diverse fields of student expertise; leveraging tools that resonate with a digital-native audience, while meeting or exceeding the needs of non-student stakeholders.
-Immersive Space Design
+      </section>
+      <!-- end Skills -->
+      {% endif %}
 
-Escape rooms, theatrical experiences, and experience working in film and television art departments.
-Game Writing
+      {% if site.resume_section_recognition %}
+      <!-- begin Recognition -->
+      <section class="content-section">
 
-Narrative Design and Narrative Direction, including methods for influencing technical departments through plain language documentation.
-Research Methods
+        <header class="section-header">
+          <h2>Recognition</h2>
+        </header>
 
-Design research, close playing, archaeological recording methods adapted to interactive narrative; AI-assisted workflows (doctoral training, 2024).
-Editorial
+        {% for recognition in site.data.recognitions %}
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
+          <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
+          <p class="resume-item-copy">{{ recognition.summary }}</p>
+        </div>
+        {% endfor %}
 
-Magazine editing and production; criticism and interviews for n+1, the Los Angeles Review of Books, World Literature Today, and the Financial Times.
-Recognition
-Profile in The New Yorker (Talk of the Town)
-The New Yorker • 2008
+      </section>
+      <!-- end Recognition -->
+      {% endif %}
 
-Work as editor of “the first magazine for the iPhone” and with digital fashion photography, written up in a September issue of The New Yorker.
-Associations
-ICIDS (International Conference on Interactive Digital Storytelling)
-Program Committee, Theory/History/Foundations track • 2026
-TALOS Lab, Crete
-Listed contributor • 2026 – present
-Electronic Literature Organization (ELO)
-Presenter and exhibitor • 2024 – 2026
-Modern Language Association (MLA)
-Panelist • 2027
-Selected Writing & Links
+      {% if site.resume_section_associations %}
+      <!-- begin Associations -->
+      <section class="content-section">
 
-    ludoception.com
-    Partly Wicked, my escape room blog (written with Paul S. Nowak)
-    LA Review of Books: interview with Michael Cunningham, author of The Hours and The Snow Queen
-    World Literature Today: interview with fairy tale expert Jack Zipes
-    World Literature Today: Haitian literature as a model for world literature, and an interview with Haitian author Frankétienne
-    n+1: This Is Not a Brothel (also reprinted in Salon.com)
-    The Drunken Odyssey podcast: Doom and the mod Myhouse.wad as works of literature
-    The Drunken Odyssey podcast: the film and graphic novel Scott Pilgrim vs. The World
+        <header class="section-header">
+          <h2>Associations</h2>
+        </header>
 
-{% if site.resume_print_social_links %}
-Social Links
-{% include print-social-links.html %}
-{% endif %}
+        {% for association in site.data.associations %}
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
+          <p class="resume-item-copy">{{ association.summary }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Associations -->
+      {% endif %}
+
+      {% if site.resume_section_interests %}
+      <!-- begin Interests -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Outside Interests</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for interest in site.data.interests %}
+            <li>{{ interest.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Interests -->
+      {% endif %}
+
+      {% if site.resume_section_links %}
+      <!-- begin Links -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Additional Links</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for link in site.data.links %}
+            <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Links -->
+      {% endif %}
+
+      {% if site.resume_print_social_links %}
+      <!-- begin Print Social Links -->
+      <section class="content-section print-only">
+
+        <header class="section-header">
+          <h2>Social Links</h2>
+        </header>
+
+        <div class="resume-item">
+        {% include print-social-links.html %}
+        </div>
+
+      </section>
+      <!-- end Print Social Links -->
+      {% endif %}
+
+    </div>
+
+  </body>
+
+</html>
