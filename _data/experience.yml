@@ -1,32 +1,58 @@
 # Jobs
-# VP of Global Communications
+
+- company: DigiPen Institute of Technology
+  position: Course Author, CS 5110 System Design Methods (Online MS in Game Development)
+  duration: "2026 &mdash; Present"
+  summary: "Authoring the systems design methods course for the online MSGD, built in Unreal Engine 5."
+
+- company: Applied Game Designs (AGD)
+  position: Head of Game Design
+  duration: "2026"
+  summary: "Led game design across the studio's projects, including Paragon, a deterministic tactical combat game."
 
 # Unannounced Mobile Strategy Game
 - company: Marauder Tech
-  position: Narrative Director, Quest Designer
-  duration: May 2024 - Present (ongoing)
-  summary: Narrative Design, lorekeeping, quest and mission design, character design and related duties. Ref. Contact - Shawn Borsky (Senior Product Manager) - shawn (at) borsky.co
+  position: Quest Designer, Narrative Designer/Director
+  duration: "May 2024 &mdash; Dec 2025"
+  summary: "Narrative design, lorekeeping, quest and mission design, level design, character design and related duties on Price of Glory, a live-service multiplayer mobile strategy game; the game remains live. Ref. Contact - Shawn Borsky (Senior Product Manager) - shawn (at) borsky.co"
 
 # Teaching at UCF
 - company: University of Central Florida
-  position: Instructor 
-  duration: 2023 - 2024
-  summary: Created material, designed and/or updated modules, and taught courses Introduction to Digital Media and Game Design Portfolio Development 
+  position: Instructor
+  duration: "2023 - 2024"
+  summary: "Created material, designed and/or updated modules, and taught courses Introduction to Digital Media and Game Design Portfolio Development"
 
 # Game Writing
 - company: Comets and Cockpits
   position: Guest Writer
-  duration:  2022
-  summary: Created material for a TTRPG module, centered around an original creature with unique behavior, backstory, and lore
-  
+  duration: "2022"
+  summary: "Created material for a TTRPG module, centered around an original creature with unique behavior, backstory, and lore"
+
 # FS
 - company: Full Sail University
   position: Course Director (Writing for Games, Script Analysis and Criticism, et. al.)
-  duration: Dec, 2018 &mdash; Jun, 2022
-  summary: Designed and delivered course materials for undergraduate and graduate students that aligned with curriculum requirements.  Leveraged multimedia tools to simulate collaborative writers' room experiences in online environments, enhancing student engagement. Re-focused all creative writing assignments and assessments toward industry skills acquisition. Prepared curriculum maps, and organized trainings on the preparation of curriculum maps for all faculty of the Creative Writing MFA program. Gained extensive knowledge of ACCSC accreditation standards through direct involvement in the accreditation process. Applied best practices in curriculum development and assessment to meet and exceed academic benchmarks. Adapted teaching methods and course materials in response to evolving accreditation requirements, demonstrating flexibility and a commitment to educational excellence. <ul class="resume-item-list"><li>Created a modular, synchronous online Writing for Games course that taught game design skills through collaborative writing (for the Creative Writing MFA program)</li><li>Re-designed and taught the MFA Creative Writing course in Script Analysis & Criticism</li><li>Taught MFA courses in Visual Storytelling and Character Creation & Development</li><li>Taught BFA courses in Science Fiction and Children's Entertainment</li></ul>
+  duration: "Dec, 2018 &mdash; Jun, 2022"
+  summary: "Designed and delivered course materials for undergraduate and graduate students that aligned with curriculum requirements.  Leveraged multimedia tools to simulate collaborative writers' room experiences in online environments, enhancing student engagement. Re-focused all creative writing assignments and assessments toward industry skills acquisition. Prepared curriculum maps, and organized trainings on the preparation of curriculum maps for all faculty of the Creative Writing MFA program. Gained extensive knowledge of ACCSC accreditation standards through direct involvement in the accreditation process. Applied best practices in curriculum development and assessment to meet and exceed academic benchmarks. Adapted teaching methods and course materials in response to evolving accreditation requirements, demonstrating flexibility and a commitment to educational excellence. <ul class=\"resume-item-list\"><li>Created a modular, synchronous online Writing for Games course that taught game design skills through collaborative writing (for the Creative Writing MFA program)</li><li>Re-designed and taught the MFA Creative Writing course in Script Analysis & Criticism</li><li>Taught MFA courses in Visual Storytelling and Character Creation & Development</li><li>Taught BFA courses in Science Fiction and Children's Entertainment</li></ul>"
 
-# Communications Coordinator
+# Radio
 - company: Radio Theater Project
   position: Writer
-  duration: 2018
-  summary: Adapted works of literature into radio scripts for national syndication, including Timon of Athens and The Diary of Lady Murasaki.
+  duration: "2018"
+  summary: "Adapted works of literature into radio scripts for national syndication, including Timon of Athens and The Diary of Lady Murasaki."
+
+# Escape rooms
+- company: Partly Wicked
+  position: Escape Room Designer and Consultant
+  duration: "2015 &mdash; Present"
+  summary: "Design and consulting for escape rooms, including work for Escapology, then the largest escape room company in the United States."
+
+# Magazines
+- company: Looking Glass Magazine
+  position: Editor in Chief
+  duration: "2008 &mdash; 2011"
+  summary: "Led an eighteen-person team; designed CYOA games and puzzles for print; built one of the first magazines made for the iPhone, profiled in The New Yorker's Talk of the Town (September 2008)."
+
+- company: Time Out Istanbul
+  position: Editor in Chief
+  duration: "2007 &mdash; 2008"
+  summary: ""
